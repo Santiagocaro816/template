@@ -16,3 +16,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::resource('juego', \App\Http\Controllers\Room_controller::class);
+Route::resource('partida', \App\Http\Controllers\Card_controller::class);
+
+
+Route::get('/game', function (){
+
+});
+
+
+
+
+//Route Hooks - Do not delete//
+

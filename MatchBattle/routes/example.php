@@ -1,34 +1,82 @@
-$cards = [
-["img"=> "img/soccer_player/Benzema.png", "category"=> "A1", "soccer_player_id"=> 3],
-["img"=> "img/soccer_player/bruyne.png", "category"=> "A2", "soccer_player_id"=> 4],
-["img"=> "img/soccer_player/coman.png", "category"=> "A3", "soccer_player_id"=> 5],
-["img"=> "img/soccer_player/courtois.png", "category"=> "A4", "soccer_player_id"=> 6],
-["img"=> "img/soccer_player/cristiano.png", "category"=> "B1", "soccer_player_id"=> 1],
-["img"=> "img/soccer_player/cuadrado.png", "category"=> "B2", "soccer_player_id"=> 30],
-["img"=> "img/soccer_player/davies.png", "category"=> "B3", "soccer_player_id"=> 29],
-["img"=> "img/soccer_player/dejong.png", "category"=> "B4", "soccer_player_id"=> 7],
-["img"=> "img/soccer_player/dembele.png", "category"=> "C1", "soccer_player_id"=> 8],
-["img"=> "img/soccer_player/griezmann.png", "category"=> "C2", "soccer_player_id"=> 31],
-["img"=> "img/soccer_player/haaland.png", "category"=> "C3", "soccer_player_id"=> 9],
-["img"=> "img/soccer_player/ibrahimovic.png", "category"=> "C4", "soccer_player_id"=> 28],
-["img"=> "img/soccer_player/kante.png", "category"=> "D1", "soccer_player_id"=> 10],
-["img"=> "img/soccer_player/kimmich.png", "category"=> "D2", "soccer_player_id"=> 11],
-["img"=> "img/soccer_player/laporte.png", "category"=> "D3", "soccer_player_id"=> 12],
-["img"=> "img/soccer_player/lewandoski.png", "category"=> "D4", "soccer_player_id"=> 13],
-["img"=> "img/soccer_player/luisdiaz.png", "category"=> "E1", "soccer_player_id"=> 14],
-["img"=> "img/soccer_player/mane.png", "category"=> "E2", "soccer_player_id"=> 15],
-["img"=> "img/soccer_player/mbappe.png", "category"=> "E3", "soccer_player_id"=> 16],
-["img"=> "img/soccer_player/messi.png", "category"=> "E4", "soccer_player_id"=> 2],
-["img"=> "img/soccer_player/modric.png", "category"=> "F1", "soccer_player_id"=> 17],
-["img"=> "img/soccer_player/neuer.png", "category"=> "F2", "soccer_player_id"=> 18],
-["img"=> "img/soccer_player/neymar.png", "category"=> "F3", "soccer_player_id"=> 19],
-["img"=> "img/soccer_player/walker.png", "category"=> "F4", "soccer_player_id"=> 26],
-["img"=> "img/soccer_player/ramos.png", "category"=> "G1", "soccer_player_id"=> 20],
-["img"=> "img/soccer_player/rashford.png", "category"=> "G2", "soccer_player_id"=> 21],
-["img"=> "img/soccer_player/salah.png", "category"=> "G3", "soccer_player_id"=> 22],
-["img"=> "img/soccer_player/sanchez.png", "category"=> "G4", "soccer_player_id"=> 27],
-["img"=> "img/soccer_player/sane.png", "category"=> "H1", "soccer_player_id"=> 32],
-["img"=> "img/soccer_player/sterling.png", "category"=> "H2", "soccer_player_id"=> 23],
-["img"=> "img/soccer_player/tersteguen.png", "category"=> "H3", "soccer_player_id"=> 24],
-["img"=> "img/soccer_player/vidal.png", "category"=> "H4", "soccer_player_id"=> 25],
-];
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Soccer_player;
+use Illuminate\Database\Seeder;
+
+class Soccer_players_table_seeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        $array = [
+            ["name"=>"RONALDO", "age"=>37, "avg"=>, "speed"=>8386, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/cristiano.png", "position_id"=>]
+            ["name"=>"MESSI", "age"=>35, "avg"=>, "speed"=>80, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/messi.png.png", "position_id"=>]
+        ["name"=>"BENZEMA", "age"=>34, "avg"=>, "speed"=>74, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/benzema.png", "position_id"=>]
+            ["name"=>"BRUYNE", "age"=>31, "avg"=>, "speed"=>77, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+            ["name"=>"COMAN", "age"=>26, "avg"=>, "speed"=>82, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+            ["name"=>"COURTOIS", "age"=>30, "avg"=>, "speed"=>65, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+            ["name"=>"JONG", "age"=>25, "avg"=>, "speed"=>75, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+            ["name"=>"DEMBÉLÉ", "age"=>25, "avg"=>, "speed"=>83, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+            ["name"=>"HAALAND", "age"=>22, "avg"=>, "speed"=>89, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+            ["name"=>"KANTE", "age"=>31, "avg"=>, "speed"=>90, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+            ["name"=>"KIMMINCH", "age"=>27, "avg"=>, "speed"=>82, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+            ["name"=>"LAPORTE", "age"=>28, "avg"=>, "speed"=>80, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+            ["name"=>"LEWANDOSKY", "age"=>34, "avg"=>, "speed"=>75, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+            ["name"=>"DIAZ", "age"=>25, "avg"=>, "speed"=>85, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+            ["name"=>"MÁNE", "age"=>30, "avg"=>, "speed"=>85, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+            ["name"=>"MBAPPE", "age"=>23, "avg"=>, "speed"=>90, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+            ["name"=>"MODRIC", "age"=>36, "avg"=>, "speed"=>75, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+            ["name"=>"NEUER", "age"=>36, "avg"=>, "speed"=>65, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+            ["name"=>"NEYMAR", "age"=>30, "avg"=>, "speed"=>80, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+            ["name"=>"RAMOS", "age"=>36, "avg"=>, "speed"=>78, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+            ["name"=>"RASHFORD", "age"=>24, "avg"=>, "speed"=>82, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+            ["name"=>"SALAH", "age"=>30, "avg"=>, "speed"=>81, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+            ["name"=>"STERLING", "age"=>27, "avg"=>, "speed"=>83, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+            ["name"=>"STEGEN", "age"=>30, "avg"=>, "speed"=>84, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+            ["name"=>"VIDAL", "age"=>35, "avg"=>, "speed"=>62, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+            ["name"=>"WALKER", "age"=>32, "avg"=>, "speed"=>74, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+            ["name"=>"SANCHÉZ", "age"=>33, "avg"=>, "speed"=>79, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+            ["name"=>"IBRAHIMOVICH", "age"=>40, "avg"=>, "speed"=>75, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+            ["name"=>"DAVIES", "age"=>21, "avg"=>, "speed"=>70, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+            ["name"=>"CUADRADO", "age"=>34, "avg"=>, "speed"=>80, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+            ["name"=>"GRIEZMANN", "age"=>31, "avg"=>, "speed"=>79, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+            ["name"=>"SANÉ", "age"=>26, "avg"=>, "speed"=>80, "endurance"=>, "skill"=>, "defending"=>, "strong"=>, "img"=>"/img/soccer_player/.png", "position_id"=>]
+        ];
+        $array = ['', 'MESSI', 'BENZEMA', 'BRUYNE', 'COMAN',
+            'COURTOIS', 'JONG', 'DEMBÉLÉ', 'HAALAND'
+            , 'KANTE', 'KIMMINCH', 'LAPORTE', 'LEWANDOSKY', 'DIAZ', 'MÁNE',
+            'MBAPPE', 'MODRIC', 'NEUER', 'NEYMAR','RAMOS','RASHFORD','SALAH','STERLING',
+            'STEGEN','VIDAL','WALKER','SANCHÉZ','IBRAHIMOVICH','DAVIES','CUADRADO','GRIEZMANN','SANÉ'];
+        $age = [,,, , , , , , , , , , , , , , , , , , , , , , , ,
+            , , , , , ];
+        $avg = [''];
+        $speed = [,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,];
+        $endurance = [''];
+        $skill = [''];
+        $defending = [''];
+        $strong = [''];
+        $img = [''];
+        $position_id = [''];
+
+        $soccer_player = Soccer_player::create([
+
+            'name' => '',
+            'age' => '',
+            'avg' => '',
+            'speed' => '',
+            'endurance' => '',
+            'skill' => '',
+            'defending' => '',
+            'strong' => '',
+            'shoot' => '',
+            'img' => '',
+            'position_id' => '',
+        ]);
+    }
+}

@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Sale;
+use App\Models\Games;
+use App\Models\Player;
+use App\Models\Room;
 use Illuminate\Http\Request;
 
-class Sale_controller extends Controller
+class Room_controller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +16,7 @@ class Sale_controller extends Controller
      */
     public function index()
     {
-        $sale = Sale::where('type', 1)->get();
-        return view('app', compact('sale'));
+        $room = Room::where('type', 1)->get();
     }
 
     /**
@@ -25,7 +26,7 @@ class Sale_controller extends Controller
      */
     public function create()
     {
-
+        $temp = 'a';
     }
 
     /**
@@ -37,10 +38,27 @@ class Sale_controller extends Controller
     public function store(Request $request)
     {
         //
-        $sale = Sale::create($request);
+        $code=rand(100000,999999);
+//        Crear sala, genera una hexadecimal como identificador de la misma
+        $array = [];
+        $array["code"] = $code;
+        $array["type"] = 1;
+        $room = Room::create($array);
 
-        return redirect()->route('game');
+//        return redirect()->route('nombreRuta');
+        $request = $request->all();
+        $request["role"] = 1;
+        $player = Player::create($request);
 
+        $datos = [
+            "player_id"=> $player->id,
+
+            "room_id" => $room->id,
+            "card_id" => "1",
+        ];
+        $room=($room->id);
+        $game = Games::create($datos);
+            return redirect('partida');
     }
 
     /**
@@ -51,8 +69,7 @@ class Sale_controller extends Controller
      */
     public function show($id)
     {
-        $sale = Sale::find($id);
-        return = sal
+//        $sale = Room::find($id)->where('type', '')->get();
     }
 
     /**

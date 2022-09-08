@@ -15,6 +15,7 @@ class Soccer_players_table_seeder extends Seeder
     public function run()
     {
 
+
         $arrays = [
             ["name"=>"RONALDO", "age"=>37, "avg"=>91, "speed"=>83, "endurance"=>85, "skill"=>87, "defending"=>60, "strong"=>89, "img"=>"/img/soccer_player/cristiano.png", "position_id"=>16, "shoot"=>89],
             ["name"=>"MESSI", "age"=>35, "avg"=>92, "speed"=>80, "endurance"=>81, "skill"=>86, "defending"=>60, "strong"=>85, "img"=>"/img/soccer_player/messi.png.png", "position_id"=>10, "shoot"=>85],
@@ -53,7 +54,7 @@ class Soccer_players_table_seeder extends Seeder
         foreach ($arrays as $soccer_player){
             $i+=1;
             $soccer_player = Soccer_players::create([
-
+                
                 'name' => $soccer_player['name'],
                 'age' => $soccer_player['age'],
                 'avg' => $soccer_player['avg'],

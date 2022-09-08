@@ -16,30 +16,31 @@
     @include('components.sidebar')
     @include('components.carousel')
     <br>
-    <form action="" method="post">
-    <div class="options">
+    <form action="{{route('juego.store')}}" method="post">
+        @csrf
+        <div class="options">
 
-            @csrf
-                    <div class="input-group">
-                        <input type="text" name="text" autocomplete="off" class="input" required>
-                        <label class="user-label">Nickname</label>
-                    </div>
-                    <br>
-                    <button class="button">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span> Unirme a sala
-                    </button>
-                    <br>
-                    <button class="button">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span> Crear sala
-                    </button>
 
-    </div>
+            <div class="input-group">
+                <input type="text" name="nickname" autocomplete="off" class="input" required>
+                <label class="user-label">Nickname</label>
+            </div>
+            <br>
+            <button class="button" type="submit">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span> Unirme a sala
+            </button>
+            <br>
+            <button type="submit" class="button">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>Crear sala
+            </button>
+
+        </div>
     </form>
 </div>
 

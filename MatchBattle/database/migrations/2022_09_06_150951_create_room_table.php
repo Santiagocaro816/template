@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSaleTable extends Migration
+class CreateRoomTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateSaleTable extends Migration
      */
     public function up()
     {
-        Schema::create('sale', function (Blueprint $table) {
+        Schema::create('room', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('code');
             $table->bigInteger('type');

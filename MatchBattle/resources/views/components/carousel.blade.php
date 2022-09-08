@@ -6,13 +6,38 @@
     <div class="carousel-inner">
         <div class="carousel-item active">
             <div class="carrousel_content_1">
-                <div class="info"></div>
-                <div class="text"></div>
-                <div class="img"></div>
+                <div class="content1">
+                    <div class="content_img">
+                        <img src="{{url('img/default_card 2.png')}}" alt="">
+                    </div>
+                    <div class="content_tex">
+                        <p>¡Juega Ahora! Diversión la instante con tus estrellas favoritas, Invita a tus amigos a jugar <span>Sisgo Match Battle</span>,
+                            desde 2 jugadores hasta 7 jugadores que podrán vivir una diversión deslumbrante.
+                            </p>
+                    </div>
+
+                    <div class="content_img2">
+                        <img src="{{url('img/default_card 3.png')}}" alt="">
+                    </div>
+
+                </div>
             </div>
         </div>
         <div class="carousel-item">
             <div class="carrousel_content_1">
+                <div class="content1">
+                        <div class="content_img">
+                            <img src="{{url('img/default_card 4.png')}}" alt="">
+                        </div>
+                        <div class="content_tex">
+                            <p>En Sisgo Match Battle, podrás encontrar una gran varierad de variedad de cartas, que aportan desde puntos adicionales hasta la posibilidad de ganar la ronda al instante
+                            </p>
+                        </div>
+
+                        <div class="content_img2">
+                            <img src="{{url('img/default_card 2.png')}}" alt="">
+                        </div>
+                </div>
 
             </div>
         </div>
