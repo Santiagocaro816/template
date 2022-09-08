@@ -15,7 +15,10 @@
     <article class="con-num-sala">
         <p>{{$room->code}}</p>
     </article>
+    @foreach($room)
     @foreach($users as $player)
+
+        {{$idJugador = $player->id}}
         <article class="con-player">
             <div class="img-player">
                 <img src="" alt="">

@@ -17,11 +17,9 @@ class CreateGamesTable extends Migration
             $table->id();
             $table->bigInteger('user_id')->unsigned();
             $table->bigInteger('room_id')->unsigned();
-            $table->bigInteger('card_id')->unsigned();
 
             $table->foreign('user_id')->references('id')->on('users');
             $table->foreign('room_id')->references('id')->on('rooms');
-            $table->foreign('card_id')->references('id')->on('cards');
 
             $table->timestamps();
         });

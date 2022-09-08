@@ -12,6 +12,7 @@ class Room extends Model
     protected $table = 'rooms';
     protected $fillable = [
         'code',
-        'user_id'
+        'user_id',
+        'estado'
     ];
 }
